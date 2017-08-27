@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise5.3</title>
+</head>
+<body>
+        <style>         
+                [data-count]::after {
+                    content:attr(data-count);
+                    line-height: 50px;
+                    margin: 0 20px;
+                    color: white;    
+                }
+                [data-count="10"]{
+                    background-color: #666;
+                    height: 50px;
+                    width: 30%;     
+                }
+                [data-count="5"]{
+                    background-color: #666;
+                    height: 50px;
+                    width: 30%;
+                }
+                [data-count="13"]{
+                    background-color: #666;
+                    height: 50px;
+                    width: 30%;
+                }
+                [data-count="11"]{
+                    background-color: #666;
+                    height: 50px;
+                    width: 30%;
+                }
+                [data-count="17"]{
+                    background-color: #666;
+                    height: 50px;
+                    width: 30%;
+                }
+                :not([data-count='10']) {
+                    margin: 10px 0;      
+                }
+        </style>
+        <div>
+                <div data-count="10"></div>
+                <div data-count="5"></div>
+                <div data-count="13"></div>
+                <div data-count="11"></div>
+                <div data-count="17"></div>
+        </div>              
+</body>
+</html>

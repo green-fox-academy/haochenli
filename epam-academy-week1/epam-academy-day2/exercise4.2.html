@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise4.2</title>
+</head>
+<body>
+    <style>
+        .container {
+            position: absolute;/*based on the body*/
+            height: 100%;
+            width: 100%;
+            background:radial-gradient(#c46943, #ee5520);       
+        }
+        .button {
+            position: absolute;
+            height: 50px;
+            width: 200px;
+            font-size: 20px;
+            margin: 0 20px;
+        }
+        .left {
+            top: 40%;
+            left: 30%;
+            background: linear-gradient(to right,#4e4f95,#6062b7);
+        }
+        .right {
+            top: 40%;
+            left: 55%;
+            background: linear-gradient(to right,#afab28,#d9d332);
+        }
+    </style>
+    <div class="container">
+        <button class="button left">OK</button>
+        <button class="button right">Cancel</button>
+    </div>
+</body>
+</html>

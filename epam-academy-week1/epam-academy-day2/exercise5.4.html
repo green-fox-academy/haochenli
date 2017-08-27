@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise5.4</title>
+</head>
+<body>
+        <style>
+            div:not(data-count) {
+                background-color: #ccc;
+                width: 150px;
+                overflow: hidden;
+            }
+            [data-count]{
+                width: 50px;
+                height: 50px;
+                float: left;
+            }
+            [data-count]::after{
+                content: attr(data-count);
+                position: absolute;
+                padding: 10px;
+                text-align: center;
+                color: white;
+             
+
+            }
+            [data-count="10"]{
+                background-color: #666;
+            }
+            [data-count="5"]{
+                background-color: #999;
+            }
+            [data-count="13"]{
+                background-color: #666;
+            }
+            [data-count="11"]{
+                background-color: #999;
+            }
+            [data-count="17"]{
+                background-color: #666;
+            }
+        </style>
+        <div>
+            <div data-count="10"></div>
+            <div data-count="5"></div>
+            <div data-count="13"></div>
+            <div data-count="11"></div>
+            <div data-count="17"></div>
+        </div>          
+</body>
+</html>

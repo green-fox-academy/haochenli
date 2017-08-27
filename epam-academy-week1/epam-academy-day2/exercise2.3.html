@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">      
+        <title>exercise2.3</title>   
+    </head>
+    <body>
+        <style>    
+            .Nav {
+                float: left;
+                height:50%;
+                width: 100px;
+                background-color: cyan;
+                margin: 15px  20px;
+                /*
+                position: relative;
+                top: 20px;*/
+            }
+            .container {/*this is the whole body*/
+               position: absolute;
+               height: 100%;
+               width: 100%;
+            }
+            .item.green {
+                position: absolute;
+                top: 10%;
+                left: 5%;
+                height: 77%;
+                width: 20%;
+                background-color:#50d400;
+                z-index:1;
+            }
+            .item.yellow {
+                position:absolute;
+                top: 10%;
+                right: 5%; 
+                width: 67%;
+                height: 77%;
+                background-color: #ffd62a;        
+            }
+            .item.purple {
+               margin-bottom: 10px;
+               position: fixed;
+               top: 0;
+               left: 0;
+                height: 10%;
+                width: 100%;
+                background-color:#b02aff;
+                z-index: 99;     
+            }
+            .item.pink {
+                position: absolute;
+                top:90%;
+                left: 5%;
+                width: 90%;
+                height: 10%;
+                background-color:#d6d6d6;
+            }
+        </style>
+        <div class="container">
+            <div class="item purple">
+                <nav class="Nav"></nav>
+                <nav class="Nav"></nav>
+                <nav class="Nav"></nav>
+                <nav class="Nav"></nav>
+            </div>
+                <body class="content">
+                    <div class="item green"></div>
+                    <div class="item yellow"></div>
+                    <div class="item pink"></div>
+                </body>
+            </div>
+    </body>
+</html>
+
