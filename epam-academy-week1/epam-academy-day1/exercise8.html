@@ -1,0 +1,45 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <style>
+            h1{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            
+            #agree_statement{
+                
+                position: relative;
+                left: 20px;
+            }
+            #agree{
+                position: relative;
+                top: -35px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Registration</h1>
+        <form>
+        <label for="first_name">First name</label>
+        <input type = "text" id="first_name"/>
+        <p>Last name</p>
+        <input type = "text" id="last_name"/>
+        <p>Email</p>
+        <input type = "email" id="email" aria-required=""/>
+        <p>Passworld</p>
+        <input type = "text" id="password"/>
+        <p>Confirm password</p>
+        <input type = "text" id="confirm_password"/>
+      
+        <p id="agree_statement">I agree all statement in <a href="url">terms of services</a></p>
+        <input type="checkbox" id="agree"/>
+ 
+        <input type = "submit" value="register">
+        </form>
+
+    </body>
+</html>
