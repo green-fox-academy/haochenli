@@ -1,121 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
     <head>
-        <meta charset="UTF-8">      
-        <title>exercise3</title>   
+        <meta charset="UTF-8">
+        <title>exercise3</title>
     </head>
     <body>
-        <style>    
-            .Nav {
+        <div class="container">
+            <header>
+                <a href="https://www.google.com" class = "Nav"></a>
+                <a href="https://www.baidu.com" class = "Nav"></a>
+                <a href="https://www.baidu.com" class = "Nav"></a>
+                <a href="https://www.baidu.com" class = "Nav2"></a>
+                <a href="https://www.baidu.com" class = "Nav2"></a>
+            </header>
+            <aside>
+                <div class="gold"></div>
+                <div class="gold"></div>
+                <div class="gold"></div>
+                <div class="gold"></div>
+                <div class="gold"></div>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.  It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p>
+            </aside>
+            <main>
+                <p class="p1">rem Ipsum rem Ipsum is simply dummy text of <br>
+                    the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="red_box"></div>
+                <div class="red_box"></div>
+                <div class="red_box"></div>
+                <div class="red_box"></div>
+                <div class="red_box"></div>
+                <div class="red_box"></div>
+                <div class="red_box"></div>
+                <div class="red_box"></div>
+                <div class="clear"></div>
+                <p class="p2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.
+                <p class="p2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.                   </p>
+            </main>  
+        </div>             
+        <style> 
+            .gold{
+                margin: 25px 25px;
+                width: 250px;
+                height: 50px;
+                background: gold;
+
+            } 
+            .p2 {
                 float: left;
-                height:50%;
+                width: 300px;
+            }
+           .clear {
+               clear: both;
+           }
+            p {
+                font-size: 16px;
+                padding: 20px;
+            }
+            .red_box {
+                
+                margin-bottom: 30px;
+                margin-left: 30px;
+                float: left;
+                height: 120px;
+                width: 130px;
+                background-color: red;
+                top: 300px;
+            }
+            .Nav2 {
+                float: right;
+                height: 30px;
+                width: 40px;
+                background-color: cyan;
+                margin: 30px  10px;      
+            }
+            .Nav {
+                transition-duration: 0.3ms;
+                transition-timing-function: linear;
+                transition-delay: 0.1ms;
+
+                float: left;
+                height: 30px;
                 width: 100px;
                 background-color: cyan;
-                margin: 15px  20px;
-                /*
-                position: relative;
-                top: 20px;*/
+                margin: 30px  20px;      
+            /*
+            position: relative;
+            top: 20px;*/
             }
-            .rightNav {
+            .Nav:hover {
+                
+                width: 150px;
+            }
+            .container {
+                margin: 0 auto;
+                height: 1000px;
+                width: 1000px;
+            }
+            aside {
                 float: right;
-                height:50%;
-                width: 50px;
-                background-color: cyan;
-                margin: 15px  10px;
-                /*
-                position: relative;
-                top: 20px;*/
-            }
-            .container {/*this is the whole body*/
-               position: absolute;
-               top: 0;
-              
-               height: 100%;
-               width: 100%;
-               max-width: 1120px;
-              
-            }
-            .item.green {
-                position: absolute;
-                height: 100%;
-                right: 0;
-                width: 400px;
+                height: 90%;
+                width: 300px;
                 background-color:#50d400;
-                z-index:1;
+                
             }
-            .item.yellow {
-                position:absolute;
-                left: 0; 
-                width: 70%;
-                height: 100%;
-                background-color: #ffd62a;        
+            main {
+                float: left;
+                height: 90%;
+                width: 700px;
+                background-color: #ffd62a;      
             }
-            
-            .item.purple {
-               position: absolute;
-               top: 0;
-               left: 0;
+            header {     
                 height: 10%;
                 width: 100%;
-                background-color:#b02aff;
-                z-index: 99;     
-            }
-            .item.red{
-                height: 100px;
-                width: 15%;;
-                float: left;
-                position: relative;
-                margin: 10px 10px;
-                top: 30%;
-                left: 15px;
-                background-color: red;
-            }
-            .pu{
-                height: 50px;
-                width: 300px;
-                position: relative;
-                margin: 10px;
-                left: 50px;
-                background-color:purple;
-                top: 15%;
-            }
-            .barrier{
-                clear: both;
+                background-color:#b02aff;      
             }
         </style>
-        <div class="container">
-            <div class="item purple">
-                <nav class="Nav"></nav>
-                <nav class="Nav"></nav>
-                <nav class="Nav"></nav>
-                <nav class="Nav"></nav>
-                <nav class="rightNav"></nav>
-                <nav class="rightNav"></nav>
-            </div>
-            <div class="item green">
-                <div class="pu"></div>
-                <div class="pu"></div>
-                <div class="pu"></div>
-                <div class="pu"></div>
-                <div class="pu"></div>
-            </div>
-
-            <div class="item yellow">
-                <p>
-                        content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-                </p>
-                <div class="item red"></div>
-                <div class="item red"></div>
-                <div class="item red"></div>
-                <div class="item red"></div>
-                <div class="barrier"></div>
-                <div class="item red"></div>
-                <div class="item red"></div>
-                <div class="item red"></div>
-                <div class="item red"></div>
-            </div>
-    
-        </div>
     </body>
 </html>
-
