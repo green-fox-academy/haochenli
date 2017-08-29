@@ -1,0 +1,127 @@
+.container {
+    width: 100%;
+    height: 100%;  
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+    margin: 5px;
+}
+ol li{
+    list-style-type: decimal;
+}
+nav{
+   float: right;
+   margin-top:14px;
+   margin-right: 20px;  
+}
+nav a {
+    margin: 5px;
+}
+.search {
+    margin-top:10px;
+    margin-right: 20px;
+    width: 200px;
+    float: right;
+    line-height: 20px;
+   
+}
+.left.nav{
+    float: left;
+    margin-left: 200px;
+}
+.early.life{
+    width: 100%;
+    float: left;
+}
+.obstacle2{
+    clear: both;
+}
+header {
+    border-bottom: 1px solid #a7d7f9;
+    position: absolute;
+    height: 40px;
+    width:100%;
+    background:linear-gradient(to top,#f6f6f6,white);
+}
+aside {
+    border-right: 1px solid #a7d7f9;
+    background:linear-gradient(to top,#f6f6f6,white);
+    position: absolute;
+    left: 0;
+    height: 300%;
+    width: 200px;
+    
+}
+h3 {
+    margin-left: 10px;
+}
+main {
+    width: 70%;
+    position: absolute;
+    top: 40px;
+    left: 220px;   
+}
+.margaret{ 
+    padding: 0px 10px;
+    
+}
+.photography{
+    margin: 0px 20px;
+    
+    width:220px;
+    content:url(https://upload.wikimedia.org/wikipedia/commons/6/68/Margaret_Hamilton_1995.jpg);
+}
+.bold{
+    font-weight: bold;
+}
+p{
+    line-height: 1.5;
+}
+.table2{
+    background-color: #F8F9FA;
+    width: 190px;
+    border: 1px solid black;
+    float: left;
+}
+h2.below{
+    margin: 0 30px;;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+.form_with_photo {
+    background-color:#F8F9FA;
+    margin-top: 40px; 
+    height: 620px;
+    width:260px;
+    border: 1px solid black;
+    float: right;
+    text-align: center;
+}
+table td{
+    text-align: left;
+    font-size: 16px;
+    vertical-align: top;
+}
+h1 {
+    border-bottom: 1px solid #a2a9b1;
+    font-size: 28.8px;
+    margin-bottom: 7.2px;
+    line-height: 37.44px;
+    font-weight: normal;
+}
+h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+div.logo {
+    width: 150px;
+    margin: 0 auto;
+    content:url(https://upload.wikimedia.org/wikipedia/commons/5/53/Wikipedia-logo-en-big.png)
+}
+
+
