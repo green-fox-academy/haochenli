@@ -39,6 +39,10 @@ nav a {
 .obstacle2{
     clear: both;
 }
+a:link:hover{ 
+    text-decoration: underline;
+    
+}
 header {
     border-bottom: 1px solid #a7d7f9;
     position: absolute;
@@ -90,9 +94,7 @@ h2.below{
     margin: 0 30px;;
 }
 
-a:hover{
-    text-decoration: underline;
-}
+
 .form_with_photo {
     background-color:#F8F9FA;
     margin-top: 40px; 
