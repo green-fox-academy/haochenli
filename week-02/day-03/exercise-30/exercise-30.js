@@ -12,4 +12,5 @@ var long = aj.length
 for(var i = 0 ; i < long ; i++){
     temp[i]=aj.pop();
 }
+aj = temp;
 console.log(temp);

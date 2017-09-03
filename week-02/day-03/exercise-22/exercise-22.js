@@ -6,6 +6,6 @@
 // - bonus for using the correct built in array method
 var af = [4,5,6,7];
 
-af.forEach(function(item){console.log(item);})
+af.forEach( function( item ){ console.log( item ); } )
 
 //function() -> item,index

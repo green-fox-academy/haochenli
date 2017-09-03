@@ -12,22 +12,22 @@
 //
 // * size should depend on a variable
 // ** Relax, a matrix is just like an array
-var result=[];
+var result = [];
 
-var size=4;
+var size = 4;
 for(var i = 0 ; i < size; i++){
-    var line=[];
-    for(var j=0; j < size; j++){
+    var line = [];
+    for(var j = 0; j < size; j++){
        
-        if(j==size-i-1)
+        if(j == size-i-1)
         {
-            line[j]=1;
+            line[j] = 1;
         }
         else{
             
-            line[j]=0;
+            line[j] = 0;
         }
     }
-    result[i]=line;
+    result[i] = line;
 }
 console.log(result);

@@ -10,7 +10,7 @@ var al = "EPAM";
 
 function greet(a){
     if(a==undefined){
-        a="fucker";
+        a="nobody";
     }
     console.log("Greetings,dear "+a);
 }

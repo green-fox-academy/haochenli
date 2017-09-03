@@ -4,7 +4,7 @@ var a = 24;
 var out = 0;
 // if a is even increment out by one
 
-if(a%2==0)
+if(a%2 ==0 )
 {
     a++;
 }
@@ -12,14 +12,14 @@ console.log(a);
 
 var b = 13;
 var out2 = '';
-if(b>=10 && b<=20)
+if(b >= 10 && b <= 20)
     {
         out2="Sweet!";
     }
-if(out2<10){
+if(out2 < 10){
     out2="More";
 }
-if(out2>20){
+if(out2 > 20){
     out2="Less";
 }
 // if b is between 10 and 20 set out2 to "Sweet!"
@@ -31,15 +31,15 @@ console.log(out2);
 var c = 123;
 var credits = 100;
 var isBonus = false;
-if(credits>=50 && isBonus==false){
-    c-=2;
+if(credits >= 50 && isBonus == false){
+    c -= 2;
 }
-else if(credits<50 && isBonus==false){
+else if(credits < 50 && isBonus == false){
     c-=1;
 }
-else if(isBonus==true)
+else if(isBonus == true)
 {
-    c=c;
+    c = c;
 }
 // if credits are at least 50,
 // and isBonus is false decrement c by 2
