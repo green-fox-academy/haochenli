@@ -1,0 +1,14 @@
+img {
+    width:100px;
+    height: 100px;
+    float: left;
+    border: 1px solid black;
+}
+.show {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    position: absolute;
+    top: 400px;
+    left: 0px;
+}

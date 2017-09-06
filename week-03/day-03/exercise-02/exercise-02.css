@@ -1,0 +1,10 @@
+.right {
+    position: relative;
+    left: 400px;;
+
+}
+.left {
+  
+    position: relative;
+    left: 100px;
+}
