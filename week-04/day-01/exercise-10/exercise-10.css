@@ -1,0 +1,49 @@
+.container {
+    width: 980px;
+    height: 980px;;
+    background: darkgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.static {
+ 
+    transform:rotate(45deg);
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+span {
+    position: absolute;
+    
+}
+
+
+.move {
+   z-index: 10;
+   right: 100px;
+   position: relative;
+  
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.move:hover {
+    transform: rotate(45deg);
+    transition: 1s;
+}
+.move:hover span{
+    color: red;
+    transform: rotate(-45deg);
+    transition: 1s;
+}
+

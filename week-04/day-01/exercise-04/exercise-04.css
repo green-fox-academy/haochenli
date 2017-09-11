@@ -1,0 +1,30 @@
+.item {
+    min-height: 100px;
+    width:  100%;
+
+}
+.container {
+    width: 700px;
+    flex-flow: column;
+    display: flex;
+    height: 800px;
+    
+}
+.green {
+    
+    background-color: green;
+    order: 1;
+    flex-grow: 1;
+}
+.yellow {
+  
+    background-color: yellow;
+    order: 3;
+    flex-grow: 2;
+}
+.purple {
+   
+    background-color: purple;
+    order: 2;
+    flex-grow: 1;
+}

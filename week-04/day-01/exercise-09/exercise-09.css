@@ -1,0 +1,31 @@
+.container {
+    width: 980px;
+    height: 100%;
+}
+.header {
+    justify-content: flex-start;
+    align-items: center;
+    background-color: purple;
+    display: flex;
+    height: 80px;
+
+}
+.button {
+    margin: 20px;
+    height: 40px;
+    width: 80px;
+    background: blue;
+}
+.content {
+    float: left;
+    width: 580px;
+    height: 1000px;
+    background-color: yellow;
+}
+.sidebar {
+    float: right;
+    right: 0px;
+    width: 400px;
+    height: 1000px;;
+    background-color: green;
+}
