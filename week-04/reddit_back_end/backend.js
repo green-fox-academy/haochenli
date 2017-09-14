@@ -20,7 +20,7 @@ app.get('/posts',function(req,res){
     MongoClient.connect(url,function(err,db){
         if (err) {
             console.log('Unable to connect to the MongoDB server. Error:', err);
-          }
+        }
         var cursor = db.collection('posts').find({});
         cursor.each(function(err,doc){
             sendinfos.push(doc);
@@ -31,15 +31,45 @@ app.get('/posts',function(req,res){
     });
 })
 
-app.get('/posts:id:votetype',function(req,res){
+app.post('/posts/:id/:votetype',function(req,res){
     let id = req.params.id;
     let votetype = req.params.votetype;
     MongoClient.connect(url,function(err,db){
         if (err) {
             console.log('Unable to connect to the MongoDB server. Error:', err);
           }
-        
-        db.close();
+        if(votetype === 'upvote'){
+            db.collection('posts').find({'_id' : mongodb.ObjectId(id)}).toArray(function(err,items){
+                let score = items[0].score;
+                score=score+1;
+                db.collection('posts').updateOne(
+                    {'_id' : mongodb.ObjectId(id)}, {$set: {"score" : score}}
+                );
+                var cursor = db.collection('posts').find({'_id' : mongodb.ObjectId(id)});
+                cursor.each(function(err,doc){
+                    sendinfos.push(doc);
+                });
+                res.send(JSON.stringify(sendinfos));
+                sendinfos = [];
+                db.close();
+            })
+        }
+        if(votetype === 'downvote'){
+            db.collection('posts').find({'_id' : mongodb.ObjectId(id)}).toArray(function(err,items){
+                let score = items[0].score;
+                score=score-1;
+                db.collection('posts').updateOne(
+                    {'_id' : mongodb.ObjectId(id)}, {$set: {"score" : score}}
+                );
+                var cursor = db.collection('posts').find({'_id' : mongodb.ObjectId(id)});
+                cursor.each(function(err,doc){
+                    sendinfos.push(doc);
+                });
+                res.send(JSON.stringify(sendinfos));
+                sendinfos = [];
+                db.close();
+            })
+        } 
     });
 })
 
