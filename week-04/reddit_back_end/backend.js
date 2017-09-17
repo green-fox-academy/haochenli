@@ -28,9 +28,8 @@ app.put('/posts/:id/:votetype',function(req,res){
     MongoClient.connect(url,function(err,db){
         if (err) {
             console.log('Unable to connect to the MongoDB server. Error:', err);
-          }     
-        db.collection('posts').find({'_id' : mongodb.ObjectId(id)}).toArray(function(err,items){
-            
+        }     
+        db.collection('posts').find({'_id' : mongodb.ObjectId(id)}).toArray(function(err,items){      
             if(votetype === 'upvote'){
                 items[0].score++;
             }
@@ -43,7 +42,6 @@ app.put('/posts/:id/:votetype',function(req,res){
             res.send(JSON.stringify(items[0]));
             db.close();
         });  
-        
     });
 })
 
@@ -54,7 +52,7 @@ app.post('/posts',function(req,res){
         href: '',
         timestamp: Date.parse(new Date),
         score: 0,
-        owner: "anynomous",
+        owner: req.headers.username ? req.header.username : 'anynomous',
         vote : 0
     }
     let title = req.body.title;
@@ -68,7 +66,7 @@ app.post('/posts',function(req,res){
         db.collection('posts').insert(sendContent);
         res.send(sendContent);
         db.close();
-        });
+    });
 });
 
 app.delete('/posts/:id',function(req,res){
@@ -88,7 +86,6 @@ app.delete('/posts/:id',function(req,res){
 });
 
 app.put('/posts/:id',function(req,res){
-    console.log('aaa');
     let id = req.params.id;
     let title = 'modified title';
     let href = 'I have changed';
