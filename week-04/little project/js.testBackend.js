@@ -7,6 +7,7 @@ var MongoClient = mongodb.MongoClient;
 var app  = express();
 var url = 'mongodb://localhost:27017/JSA';
 var ObjectID = require('mongodb').ObjectID;
+app.use(express.static('public'));
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); 
@@ -138,7 +139,7 @@ app.delete('/api/todos/:id',function(req,res){
             }
             db.collection('jsa_test').deleteOne({'_id' : mongodb.ObjectId(id)});
             db.close();
-            res.status(204).send('No content');
+            res.status(200).send('No content');
             });
         });
 });
