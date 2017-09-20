@@ -1,0 +1,13 @@
+@import  'variables';
+
+
+.push {
+    background-color: blue;
+
+}
+
+.main.button {
+   @extend .push;
+   font-weight: bold;
+    
+}

@@ -1,0 +1,28 @@
+@import  'variables';
+.Mint {
+    background-color: $Mint;
+}
+.Teal {
+    background-color: $Teal;
+}
+.Gold {
+    background-color: $Gold;
+}
+.Tomato {
+    background-color: $Tomato;
+}
+.block2.Tomato{
+    background-color: mix(white, $Mint, 30%);
+}
+.block{
+    float: left;
+    height: 100px;
+    width: 200px;
+    margin: 20px;
+}
+.block2 {
+    @extend .block;
+}
+.second {
+    clear: both;
+}

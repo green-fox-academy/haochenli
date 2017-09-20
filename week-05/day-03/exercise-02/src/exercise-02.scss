@@ -1,0 +1,15 @@
+$color:blue;
+
+body {
+    color : $color;  
+}
+
+ul {
+    li{
+        margin: 0;
+        a{
+            color:red;
+        }
+    }
+
+}

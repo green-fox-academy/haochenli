@@ -1,0 +1,12 @@
+@import  'variables';
+
+
+@mixin border-radius($thickness) {
+    border: $thickness solid black;
+
+}
+img {
+    width: 100px;
+    height: 100px;
+    @include border-radius(10px);
+}

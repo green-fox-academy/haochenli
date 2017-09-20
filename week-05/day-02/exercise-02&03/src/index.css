@@ -1,0 +1,114 @@
+.container {
+    
+    background:radial-gradient(circle at center, #C8C8C8, #AAAAAA, #F4F4F4 100%);
+    width:100%;
+    height: 800px;
+    border: 1px solid white;
+}
+.button:hover{
+    cursor:pointer;
+}
+h1{
+    color: white;
+    margin: 30px;
+    font-size: 40px;
+}
+p{
+    color: white;
+    margin:0 30px;
+}
+.description {
+    opacity: 0.5;
+    background-color: black;
+    position: absolute;
+    top: 410px;
+    width : 800px;
+    height: 200px;
+}
+.bottom.viewer {
+    top: 200px;
+    width: 600px;
+    height: 80px;
+    margin: -120px auto;
+}
+
+
+
+
+
+div.thumbnail {
+    border: 4px solid white;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 0 10px;
+    box-shadow: 1px 1px 1px 1px #AAAAAA;
+}
+
+
+
+.arrow{
+    content:"";
+    border-color: transparent transparent transparent transparent;
+    border-style:solid;
+    border-width:20px;
+    width:0;
+    height: 0px;;
+    margin: 10px ;
+    position: absolute;
+    top: 591px;
+
+   
+}
+
+
+div.thumbnail:hover {
+    cursor: pointer;
+    box-shadow:5px 5px 10px 5px #888888;
+}
+
+
+.thumbnail.img {
+   
+    width: 60px;
+    height: 60px;
+}
+.main {
+    box-shadow:5px 5px 10px 5px #888888;
+    width : 900px;
+    height: 450px;
+    margin: 150px auto;
+}
+.main_view {
+    width :800px;
+    height: 450px;
+
+}
+.photo.viewer {
+    display: inline-block;
+    width: 800px;
+    height: 450px;
+    
+}
+.left.button {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("download.svg"); 
+    width: 50px;
+    height: 450px;
+    float: left;
+    
+}
+
+.right.button {
+    background-color: white;
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(180deg);
+    background-position: center center;
+    background-image: url("download.svg"); 
+    width: 50px;
+    height: 450px;
+    float: right;
+}
+

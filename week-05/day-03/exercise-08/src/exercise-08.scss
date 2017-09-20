@@ -1,0 +1,6 @@
+@import  'variables';
+
+.button {
+    color: black;
+    &:focus {color: red;}
+}
