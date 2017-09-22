@@ -1,0 +1,70 @@
+$word:black;
+$header :rgb(36,86,130);
+$Body : rgb(67,183,122);
+$yellow : rgb(255,253,94);
+body {
+    font-family: Work Sans;
+    background-color: $Body;
+}
+.HEAD {
+   background-color: $header;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   button {
+       height: 30px;
+       margin: 10px;
+       width: 100px;
+       background-color: yellow;
+   }
+}
+
+.TEACHING {
+    justify-content:center;
+    display: flex;
+    padding: 10px;
+    p {
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    input {
+        font-size: 20px;
+        height: 20px;
+        width: 200px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border-bottom: 1px solid black;
+      
+    }
+    button {
+        margin-left: 30px;
+
+        height: 28px;
+        width: 50px;
+
+    }
+}
+.MIDDLE {
+    .left_teaching{
+        float: left;
+    }
+    .right_teaching {
+        float: right;
+        .input_Token {
+            margin-top: 10px;
+            display: block;
+            
+        }
+        .login {
+            margin-top: 10px;
+        }
+    }
+
+}
+.BUTTOM {
+    display: block;
+    position: absolute;
+    top: 400px;
+}
